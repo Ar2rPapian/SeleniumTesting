@@ -6,4 +6,4 @@ Feature: TESTING
 
   @TEST_TAG
   Scenario: TESTING
-    Given I navigate to HTTPS "www.beachbodyondemand.com"
+    Given I navigate to "www.beachbodyondemand.com"
