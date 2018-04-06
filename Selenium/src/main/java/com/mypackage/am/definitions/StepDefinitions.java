@@ -21,7 +21,7 @@ public class StepDefinitions {
         BrowserActionsHelper.openBrowser();
     }
 
-    @Given("^I navigate to HTTPS \"([^\"]*)\"$")
+    @Given("^I navigate to \"([^\"]*)\"$")
     public void iNavigateTo(String pageName)  {
         log("Navigate", pageName);
         BrowserActionsHelper.openPageByUrl(pageName);
