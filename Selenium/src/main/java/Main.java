@@ -80,3 +80,13 @@ public class Main {
         }
     }
 }
+
+
+class HttpRequest extends Unirest{
+    
+    public static RequestBodyEntity sendPost(String url, HashMap<String,String> headers, String jBody) throws UnirestException {
+        return post(url).headers(headers).body(jBody);
+    }
+}
+
+
