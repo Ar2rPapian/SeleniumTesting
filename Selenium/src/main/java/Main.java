@@ -55,11 +55,6 @@ public class Main {
                 ", 'termsAndConditionsAgree':" + "true" +
                 '}');
 
-
-        HashMap<String,String> registerHeaders = new HashMap<>();
-        authHeaders.put("Authorization", String.format("Bearer %s", access_token));
-        authHeaders.put("Content-Type", "application/json");
-
         System.out.println(
 
         Unirest.post(registerUrl)
